@@ -14,11 +14,11 @@ const salaryData = [
   ];
   
   const getRoles = () => {
-    return ['CTO', 'Technical Lead', 'Software Engineer II', 'Software Engineer I'];
-  }
+    return [...new Set(salaryData.map((item) => item.role))];
+};
   
   const getCompanies = () => {
-    return ['Big Data Inc.', 'Medium Data Inc.', 'Small Data Inc.'];
+    return [...new Set(salaryData.map((item) => item.company))];
   }
   
   const getDataByRole = role => {
