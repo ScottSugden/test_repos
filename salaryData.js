@@ -13,6 +13,8 @@ const salaryData = [
     { role: 'Software Engineer I', company: 'Small Data Inc.', salary: 95000},
   ];
   
+  // test new commit 
+  
   const getRoles = () => {
     return [...new Set(salaryData.map((item) => item.role))];
 };
